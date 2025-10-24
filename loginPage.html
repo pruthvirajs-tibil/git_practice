@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            border: 1px solid red;
+            flex-direction: column;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+        .input-container{
+            position: relative;
+            /* border: 1px solid black; */
+            display: inline-block;
+        }
+
+        input{
+            padding: 10px;
+        }
+        label{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #8a8a8a;
+        }
+        input:active + label{
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <div class="input-container">
+                <input type="text" id="username">
+                <label for="username"><span>username</span></label>
+            </div>
+            <div class="input-container">
+                <input type="text" id="username">
+                <label for="username"><span>username</span></label>
+            </div>
+            <div class="input-container">
+                <input type="text" id="username">
+                <label for="username"><span>username</span></label>
+            </div>
+            <div class="input-container">
+                <input type="text" id="username">
+                <label for="username"><span>username</span></label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
